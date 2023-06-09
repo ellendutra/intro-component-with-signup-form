@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Intro component with sign-up form</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="body">
+  <main class="main">
+    <section class="main__intro">
+      <h1 class="main__title">Learn to code by watching others</h1>
+      <p class="main__text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </section>
+
+    <section class="main__form">
+      <div class="main__info">
+        <span><strong>Try it free 7 days</strong> then $20/mo. thereafter</span>
+      </div>
+
+      <form class="form" name="freeTrial" id="freeTrial" >
+        <fieldset class="form__fieldset">
+          <input class="form__input" type="text" minlength="3" placeholder="First Name" name="firstName" id="firstName" required>
+          <span class="form__error"></span>
+          <img class="form__img" src="./images/icon-error.svg" alt="">
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <input class="form__input" type="text" minlength="2" placeholder="Last Name" name="lastName" id="lastName" required>
+          <span class="form__error"></span>
+          <img  class="form__img" src="./images/icon-error.svg" alt="">
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <input class="form__input" type="email" minlength="8" placeholder="Email Address" name="emailAddress" id="emailAddress" pattern="^[^ ]+@[^ ]+\.[a-z]{2,3}$" required>
+          <span class="form__error"></span>
+          <img class="form__img" src="./images/icon-error.svg" alt="">
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <input class="form__input" type="password" minlength="5" placeholder="Password" name="password" id="password" required>
+          <span class="form__error"></span>
+          <img class="form__img" src="./images/icon-error.svg" alt="">
+        </fieldset>
+
+        <button class="form__button">Claim your free trial</button>
+        <p class="form__text">By clicking the button, you are agreeing to our <a class="form__link" href="#">Terms and Services</a></p>
+
+      </form>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
